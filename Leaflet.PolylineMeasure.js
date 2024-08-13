@@ -83,24 +83,24 @@
              * @type {String}
              * @default
              */
-            tooltipTextFinish: 'Click to <b>finish line</b><br>',
-            tooltipTextDelete: 'Press SHIFT-key and click to <b>delete point</b>',
-            tooltipTextMove: 'Click and drag to <b>move point</b><br>',
-            tooltipTextResume: '<br>Press ' + (isMacOS ? '⌘' : 'CTRL-key') + ' and click to <b>resume line</b>',
-            tooltipTextAdd: 'Press ' + (isMacOS ? '⌘' : 'CTRL-key') + ' and click to <b>add point</b>',
+            tooltipTextFinish: 'Clique em <b>linha de chegada</b><br>',
+            tooltipTextDelete: 'Pressione SHIFT e clique em <b>excluir ponto</b>',
+            tooltipTextMove: 'Clique e arraste para <b>Ponto de movimentação</b><br>',
+            tooltipTextResume: '<br>Pressione ' + (isMacOS ? '⌘' : 'CTRL') + ' e clique em <b>retomar a linha</b>',
+            tooltipTextAdd: 'Pressione ' + (isMacOS ? '⌘' : 'CTRL') + ' e clique em <b>Adicionar ponto</b>',
 
             /**
              * Title for the control going to be switched on
              * @type {String}
              * @default
              */
-            measureControlTitleOn: "Turn on PolylineMeasure",
+            measureControlTitleOn: "Comece a medir",
             /**
              * Title for the control going to be switched off
              * @type {String}
              * @default
              */
-            measureControlTitleOff: "Turn off PolylineMeasure",
+            measureControlTitleOff: "Parar",
             /**
              * Label of the Measure control (maybe a unicode symbol)
              * @type {String}
@@ -124,7 +124,7 @@
              * @type {String}
              * @default
              */
-            clearControlTitle: 'Clear Measurements',
+            clearControlTitle: 'Limpar medidas',
             /**
              * Label of the Clear control (maybe a unicode symbol)
              * @type {String}
@@ -155,10 +155,10 @@
              * @default
              */
             unitControlTitle: {
-               text: 'Change Units',
-               kilometres: 'kilometres',
-               landmiles: 'land miles',
-               nauticalmiles: 'nautical miles'
+               text: 'Mudanças unidades',
+               kilometres: 'Quilômetros',
+               landmiles: 'Milhas terrestres',
+               nauticalmiles: 'Milhas náuticas'
             },
             /**
              * Unit symbols to show in the Unit Control button and measurement labels
