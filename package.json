@@ -1,5 +1,5 @@
 {
-  "name": "leaflet.polyline.measure",
+  "name": "@ge21/leaflet.polyline.measure",
   "version": "1.0.0",
   "description": "Leaflet Plugin to measure distances of simple lines as well as of complex polylines",
   "main": "Leaflet.PolylineMeasure.js",
