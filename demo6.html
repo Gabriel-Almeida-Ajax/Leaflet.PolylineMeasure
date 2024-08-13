@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 6 of Leaflet.PolylineMeasure</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="Leaflet.PolylineMeasure.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="Leaflet.PolylineMeasure.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="manualStart">Start</button>
+    <button id="manualClear">Clear</button>
+    <div id="map"></div>
+    <script>
+        var layerOsm = new L.TileLayer('https://{s}.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', { subdomains: ['server', 'services'], maxZoom: 19, noWrap: false });
+
+        var map = new L.Map('map')
+
+        map.addLayer(layerOsm).setView(new L.LatLng(48, 0), 4);
+
+        let polylineMeasure = L.control.polylineMeasure({ position: '' })
+
+        polylineMeasure.addTo(map);
+
+    </script>
+    <script>
+        const manualStart = document.getElementById('manualStart');
+        manualStart.addEventListener('click', function () {
+            polylineMeasure._toggleMeasure()
+        });
+        const manualClear = document.getElementById('manualClear');
+        manualClear.addEventListener('click', function () {
+            polylineMeasure._clearAllMeasurements()
+        });
+    </script>
+</body>
+
+</html>
